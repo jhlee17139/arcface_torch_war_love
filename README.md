@@ -24,19 +24,19 @@ tqdm와 onnxruntime 추가 설치 필요
 
 ## 코드 실행 방법
 
-- 얼굴 인식 backbone 학습
+얼굴 인식 backbone 학습
 - python -m torch.distributed.launch --nproc_per_node=8 --nnodes=1 --node_rank=0 --master_addr="127.0.0.1" --master_port=12581 train.py configs/war_love_r100
 
 
-- 얼굴 분류기 학습
+얼굴 분류기 학습
 - python python train_recognition.py configs/war_love_recognition
 
 
-- 얼굴 분류기 성능 평가
+얼굴 분류기 성능 평가
 - python eval_recognition.py configs/war_love_recognition
 
 
-- 얼굴 탐지기와 분류기로 주석 생성
+얼굴 탐지기와 분류기로 주석 생성
 - python inference_face_img.py configs/war_love_recognition
 - 주석을 생성하고 싶은 이미지들은 love_war_inference/input에 넣으면 됨
 - 출력은 love_war_inference/output에 생성
