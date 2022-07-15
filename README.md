@@ -4,6 +4,8 @@
 
 사랑과 전쟁 데이터는 드라이브에서 업로드
 
+사랑과 전쟁 얼굴 데이터는 과제(인공지능을 활용한 콘텐츠 창작 기술, 1711152844) 목적으로 구축
+
 코드 출처 : https://github.com/deepinsight/insightface
 
 ## Requirements
